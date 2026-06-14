@@ -8,494 +8,165 @@
     content="Repositorio digital de jornadas de capacitación del CREBE Señor de los Milagros - Ucayali."
   >
   <title>Jornadas de capacitación CREBE</title>
-  <link rel="stylesheet" href="estilos.css?v=4">
+  <link rel="stylesheet" href="estilos.css?v=13">
 </head>
 
 <body>
   <a class="salto-contenido" href="#contenido">Ir al contenido</a>
 
-  <header class="encabezado" id="inicio">
-    <nav class="barra-navegacion" aria-label="Navegación principal">
-      <a class="marca" href="#inicio" aria-label="Ir al inicio">
-        <img
-          class="logo-institucional"
-          src="imagenes/logo-crebe.png"
-          alt="Logo institucional del CREBE Señor de los Milagros"
-        >
-        <span>
-          <strong>CREBE</strong>
-          <small>Señor de los Milagros - Ucayali</small>
-        </span>
+  <header class="cabecera" id="inicio">
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a class="marca" href="index.html" aria-label="Inicio">
+        <span class="marca-icono" aria-hidden="true">CAP</span>
+        <span>Capacitaciones CREBE</span>
       </a>
 
-      <div class="enlaces">
-        <a href="#inicio">Inicio</a>
-        <a href="#capacitaciones">Capacitaciones</a>
-        <a href="#capacitaciones">Materiales</a>
-        <a href="#contacto">Contacto</a>
+      <div class="enlaces-cabecera">
+        <a class="enlace-cabecera" href="#inicio">Inicio</a>
+        <a class="enlace-cabecera" href="#capacitaciones">Capacitaciones</a>
+        <a class="enlace-cabecera" href="#materiales">Materiales</a>
+        <a class="enlace-cabecera" href="#contacto">Contacto</a>
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="hero-texto">
-        <p class="etiqueta">Repositorio formativo institucional</p>
-        <h1>Jornadas de capacitación CREBE</h1>
-        <p>
-          Espacio digital para organizar las sesiones de capacitación por fecha,
-          con acceso al video, flyer, infografía y diapositivas de cada jornada.
-        </p>
+    <div class="presentacion">
+      <div class="bloque-institucional" aria-label="Identidad institucional">
+        <img
+          class="logo-crebe"
+          src="logo-crebe.png"
+          alt="Logo del CREBE Señor de los Milagros - Ucayali"
+        >
 
-        <div class="hero-acciones">
-          <a class="boton principal" href="#capacitaciones">Ver capacitaciones</a>
+        <div class="texto-institucional">
+          <p class="nombre-institucional">
+            CREBE "Señor de los Milagros" - Ucayali
+          </p>
+          <p class="detalle-institucional">
+            Centro de Recursos de Educación Básica Especial
+          </p>
         </div>
       </div>
-    </section>
+
+      <p class="etiqueta-superior">Repositorio formativo institucional</p>
+      <h1>Jornadas de capacitación CREBE</h1>
+      <p class="subtitulo">
+        Espacio digital para organizar las sesiones de capacitación por fecha,
+        con acceso al video, flyer, infografía y diapositivas de cada jornada.
+      </p>
+    </div>
   </header>
 
-  <main id="contenido" class="contenedor">
-    <section class="presentacion">
-      <div>
-        <p class="etiqueta">Línea de tiempo</p>
-        <h2>Capacitaciones organizadas por fecha</h2>
+  <main id="contenido">
+    <section class="panel-busqueda" aria-labelledby="titulo-busqueda">
+      <div class="panel-encabezado">
+        <div>
+          <p class="seccion-etiqueta">Línea de tiempo</p>
+          <h2 id="titulo-busqueda">Capacitaciones organizadas por fecha</h2>
+          <p class="descripcion-panel">
+            Cada recuadro corresponde a una jornada. La información se presenta
+            de arriba hacia abajo, iniciando con la fecha, el título de la capacitación
+            y los recursos disponibles.
+          </p>
+        </div>
+
+        <button id="limpiar" class="boton-secundario" type="button">
+          Limpiar búsqueda
+        </button>
+      </div>
+
+      <div class="controles">
+        <div class="campo">
+          <label for="busqueda">Buscar capacitación</label>
+
+          <div class="entrada-busqueda">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+            >
+              <path
+                d="m21 21-4.7-4.7m2.2-5.3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+              />
+            </svg>
+
+            <input
+              id="busqueda"
+              type="search"
+              autocomplete="off"
+              placeholder="Ejemplo: neurodiversidad, junio, adaptaciones"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="panel-capacitaciones"
+      id="capacitaciones"
+      aria-labelledby="titulo-capacitaciones"
+    >
+      <h2 id="titulo-capacitaciones" class="solo-lectores">
+        Lista de capacitaciones
+      </h2>
+
+      <div id="lineaTiempo" class="linea-tiempo" aria-live="polite"></div>
+
+      <p id="sinResultados" class="estado-vacio" hidden>
+        No se encontraron capacitaciones con ese criterio de búsqueda.
+      </p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-contenido">
+      <div class="footer-bloque footer-identidad">
+        <img
+          class="logo-footer"
+          src="logo-crebe.png"
+          alt="Logo del CREBE Señor de los Milagros - Ucayali"
+        >
+
+        <div>
+          <h2>Jornadas de capacitación CREBE</h2>
+          <p>
+            Repositorio digital de sesiones formativas, materiales y recursos
+            de apoyo para la Educación Básica Especial.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bloque">
+        <h2>Enlaces</h2>
         <p>
-          Cada recuadro corresponde a una jornada. La información se presenta
-          de arriba hacia abajo, iniciando con la fecha, el título de la capacitación
-          y los recursos disponibles para consulta.
+          <a href="#inicio">Inicio</a><br>
+          <a href="#capacitaciones">Capacitaciones</a><br>
+          <a href="#materiales">Materiales</a><br>
+          <a href="#contacto">Contacto</a>
         </p>
       </div>
 
-      <div class="buscador">
-        <label for="buscarCapacitacion">Buscar capacitación</label>
-        <input
-          type="search"
-          id="buscarCapacitacion"
-          placeholder="Buscar por fecha, título o tema"
-        >
-      </div>
-    </section>
-
-    <section class="linea-tiempo" id="capacitaciones" aria-label="Lista de capacitaciones">
-      <article class="capacitacion disponible" data-texto="12 de junio fundamentos de la neurodiversidad adaptaciones curriculares pedagógicas atención a la diversidad">
-        <div class="punto-linea" aria-hidden="true"></div>
-
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 12 de junio</p>
-            <h2>Fundamentos de la neurodiversidad</h2>
-            <p class="tema">
-              Tema: Adaptaciones curriculares pedagógicas en la atención a la diversidad.
-            </p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso">
-              <h3>Flyer</h3>
-              <a class="vista-recurso imagen-recurso" href="imagenes/capacitacion-01/flyer.jpg" target="_blank" rel="noopener">
-                <img src="imagenes/capacitacion-01/flyer.jpg" alt="Flyer de la capacitación Fundamentos de la neurodiversidad">
-              </a>
-              <a class="boton-recurso" href="imagenes/capacitacion-01/flyer.jpg" target="_blank" rel="noopener">
-                Abrir flyer
-              </a>
-            </article>
-
-            <article class="recurso">
-              <h3>Infografía</h3>
-              <a class="vista-recurso imagen-recurso" href="imagenes/capacitacion-01/infografia.jpg" target="_blank" rel="noopener">
-                <img src="imagenes/capacitacion-01/infografia.jpg" alt="Infografía de la capacitación Fundamentos de la neurodiversidad">
-              </a>
-              <a class="boton-recurso" href="imagenes/capacitacion-01/infografia.jpg" target="_blank" rel="noopener">
-                Abrir infografía
-              </a>
-            </article>
-
-            <article class="recurso">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso">
-                <iframe
-                  src="documentos/capacitacion-01/diapositivas.pdf"
-                  title="Diapositivas de la capacitación Fundamentos de la neurodiversidad">
-                </iframe>
-              </div>
-              <a class="boton-recurso" href="documentos/capacitacion-01/diapositivas.pdf" target="_blank" rel="noopener">
-                Abrir diapositivas
-              </a>
-            </article>
-
-            <article class="recurso">
-              <h3>Video</h3>
-              <div class="vista-recurso video-recurso">
-                <iframe
-                  src="https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/preview"
-                  title="Video de la capacitación Fundamentos de la neurodiversidad"
-                  allow="autoplay"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <a class="boton-recurso" href="https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/view" target="_blank" rel="noopener">
-                Abrir video en Drive
-              </a>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="19 de junio capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 19 de junio</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="26 de junio capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 26 de junio</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="03 de julio capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 03 de julio</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="10 de julio capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 10 de julio</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="17 de julio capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 17 de julio</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="24 de julio capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 24 de julio</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="31 de julio capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 31 de julio</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="07 de agosto capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 07 de agosto</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-
-      <article class="capacitacion pendiente" data-texto="14 de agosto capacitación pendiente">
-        <div class="punto-linea" aria-hidden="true"></div>
-        <div class="tarjeta-capacitacion">
-          <header class="cabecera-capacitacion">
-            <p class="fecha">Viernes 14 de agosto</p>
-            <h2>Capacitación pendiente de registrar</h2>
-            <p class="tema">Tema: pendiente de completar.</p>
-          </header>
-
-          <div class="recursos">
-            <article class="recurso recurso-pendiente">
-              <h3>Flyer</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Infografía</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Diapositivas PDF</h3>
-              <div class="vista-recurso marcador">Pendiente de subir</div>
-              <span class="boton-recurso deshabilitado">Sin archivo</span>
-            </article>
-
-            <article class="recurso recurso-pendiente">
-              <h3>Video</h3>
-              <div class="vista-recurso marcador">Pendiente de enlace</div>
-              <span class="boton-recurso deshabilitado">Sin enlace</span>
-            </article>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <p class="sin-resultados" id="sinResultados" hidden>
-      No se encontraron capacitaciones con ese criterio de búsqueda.
-    </p>
-  </main>
-
-  <footer class="pie" id="contacto">
-    <div class="pie-marca">
-      <img
-        class="logo-pie"
-        src="imagenes/logo-crebe.png"
-        alt="Logo institucional del CREBE Señor de los Milagros"
-      >
-      <div>
-        <strong>CREBE "Señor de los Milagros" - Ucayali</strong>
-        <p>Repositorio digital de jornadas de capacitación en Educación Especial.</p>
+      <div class="footer-bloque">
+        <h2>Contacto</h2>
+        <p>
+          CREBE "Señor de los Milagros" - Ucayali<br>
+          Centro de Recursos de Educación Básica Especial
+        </p>
       </div>
     </div>
 
-    <div>
-      <p>© <span id="anio"></span> CREBE. Uso educativo e institucional.</p>
+    <div class="footer-final">
+      <p>
+        © 2026 Jornadas de capacitación CREBE. Desarrollado por Gabriel Berrospi
+        con apoyo institucional del CREBE "Señor de los Milagros" - Ucayali.
+      </p>
     </div>
   </footer>
 
-  <script src="app.js=?v=4"></script>
+  <script src="app.js?v=13" defer></script>
 </body>
 </html>
