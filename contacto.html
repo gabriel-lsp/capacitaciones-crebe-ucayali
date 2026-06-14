@@ -8,7 +8,140 @@
     content="Contacto del repositorio de jornadas de capacitación del CREBE Señor de los Milagros - Ucayali."
   >
   <title>Contacto | Jornadas de capacitación CREBE</title>
-  <link rel="stylesheet" href="estilos.css?v=17">
+  <link rel="stylesheet" href="estilos.css?v=20">
+
+  <style>
+    .contacto-contenedor{
+      width:min(1100px, calc(100% - 40px));
+      margin:0 auto 56px;
+    }
+
+    .contacto-tarjeta{
+      background:var(--blanco);
+      border:1px solid var(--borde);
+      border-radius:var(--radio);
+      box-shadow:var(--sombra);
+      overflow:hidden;
+    }
+
+    .contacto-cabecera{
+      padding:clamp(24px, 4vw, 38px);
+      background:
+        linear-gradient(135deg, rgba(232,241,245,.95), rgba(229,243,239,.95)),
+        var(--blanco);
+      border-bottom:1px solid var(--borde);
+    }
+
+    .contacto-cabecera h2{
+      max-width:840px;
+      margin:0;
+      color:var(--azul-900);
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:clamp(1.9rem, 3.6vw, 3rem);
+      font-weight:600;
+      line-height:1.05;
+      letter-spacing:-.04em;
+    }
+
+    .contacto-cabecera p{
+      max-width:820px;
+      margin:14px 0 0;
+      color:var(--texto-suave);
+      font-size:1rem;
+      line-height:1.7;
+    }
+
+    .contacto-cuerpo{
+      padding:clamp(22px, 4vw, 34px);
+    }
+
+    .contacto-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:18px;
+    }
+
+    .contacto-dato{
+      min-width:0;
+      padding:20px;
+      background:var(--arena-50);
+      border:1px solid var(--borde);
+      border-radius:16px;
+    }
+
+    .contacto-dato h3{
+      margin:0 0 10px;
+      color:var(--azul-900);
+      font-size:1.05rem;
+      font-weight:800;
+      line-height:1.25;
+    }
+
+    .contacto-dato p{
+      margin:0;
+      color:var(--texto-suave);
+      line-height:1.65;
+      overflow-wrap:break-word;
+    }
+
+    .contacto-dato a{
+      color:var(--verde-700);
+      font-weight:750;
+    }
+
+    .contacto-accion{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:42px;
+      margin-top:14px;
+      padding:10px 14px;
+      color:var(--blanco) !important;
+      background:var(--verde-700);
+      border:1px solid var(--verde-700);
+      border-radius:999px;
+      font-size:.92rem;
+      font-weight:800;
+      text-align:center;
+      text-decoration:none;
+    }
+
+    .contacto-accion:hover{
+      background:var(--verde-600);
+    }
+
+    .contacto-accion.deshabilitado{
+      color:var(--texto-suave) !important;
+      background:var(--azul-100);
+      border-color:var(--borde);
+      cursor:default;
+    }
+
+    .contacto-bloque{
+      margin-top:24px;
+    }
+
+    .contacto-nota{
+      margin-top:24px;
+      padding:22px;
+      color:#725918;
+      background:#fff8e5;
+      border:1px solid #ebd599;
+      border-radius:16px;
+      line-height:1.7;
+      font-weight:650;
+    }
+
+    @media (max-width:760px){
+      .contacto-contenedor{
+        width:min(100% - 28px, 1100px);
+      }
+
+      .contacto-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -61,168 +194,152 @@
           <p class="seccion-etiqueta">Datos de contacto</p>
           <h2 id="titulo-contacto">Información de comunicación</h2>
           <p class="descripcion-panel">
-            Los medios de contacto corresponden al mismo equipo responsable de los
-            repositorios digitales del CREBE. Puede utilizarlos para consultas sobre
-            capacitaciones, materiales, recursos o sugerencias de mejora.
+            Los medios de contacto son los mismos utilizados en los repositorios
+            digitales del CREBE. Puede emplearlos para consultas sobre capacitaciones,
+            materiales, recursos o sugerencias de mejora.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="panel-capacitaciones" aria-label="Información de contacto">
-      <article class="tarjeta-capacitacion">
-        <header class="cabecera-capacitacion">
-          <p class="fecha">Responsable del proyecto</p>
-          <h2>Gabriel Berrospi</h2>
-          <p class="tema">
-            Desarrollador principal y coordinador del proyecto.
+    <section class="contacto-contenedor" aria-label="Información de contacto">
+      <article class="contacto-tarjeta">
+        <header class="contacto-cabecera">
+          <p class="seccion-etiqueta">Comunicación institucional</p>
+          <h2>Canales oficiales de contacto</h2>
+          <p>
+            Esta sección reúne los datos de contacto del proyecto, el apoyo institucional
+            del CREBE y los medios disponibles para reportar observaciones o solicitar
+            orientación sobre los recursos digitales.
           </p>
         </header>
 
-        <div class="recursos">
-          <article class="recurso">
-            <h4>Apoyo institucional</h4>
-            <div class="vista-recurso marcador">
-              CREBE "Señor de los Milagros" - Ucayali<br>
-              Centro de Recursos de Educación Básica Especial
-            </div>
-            <span class="boton-recurso deshabilitado">
-              Información institucional
-            </span>
-          </article>
+        <div class="contacto-cuerpo">
+          <div class="contacto-grid">
+            <article class="contacto-dato">
+              <h3>Responsable del proyecto</h3>
+              <p>
+                Gabriel Berrospi<br>
+                Desarrollador principal y coordinador del proyecto
+              </p>
+              <span class="contacto-accion deshabilitado">Información referencial</span>
+            </article>
 
-          <article class="recurso">
-            <h4>Correo institucional</h4>
-            <div class="vista-recurso marcador">
-              senordelosmilagroscrebe@gmail.com
-            </div>
-            <a class="boton-recurso" href="mailto:senordelosmilagroscrebe@gmail.com">
-              Escribir correo
-            </a>
-          </article>
+            <article class="contacto-dato">
+              <h3>Apoyo institucional</h3>
+              <p>
+                CREBE "Señor de los Milagros" - Ucayali<br>
+                Centro de Recursos de Educación Básica Especial
+              </p>
+              <span class="contacto-accion deshabilitado">Institución responsable</span>
+            </article>
 
-          <article class="recurso">
-            <h4>Correo de soporte</h4>
-            <div class="vista-recurso marcador">
-              soporte.bancolsp@gmail.com
-            </div>
-            <a class="boton-recurso" href="mailto:soporte.bancolsp@gmail.com">
-              Escribir a soporte
-            </a>
-          </article>
+            <article class="contacto-dato">
+              <h3>Correo institucional</h3>
+              <p>
+                <a href="mailto:senordelosmilagroscrebe@gmail.com">
+                  senordelosmilagroscrebe@gmail.com
+                </a>
+              </p>
+              <a class="contacto-accion" href="mailto:senordelosmilagroscrebe@gmail.com">
+                Escribir correo
+              </a>
+            </article>
 
-          <article class="recurso">
-            <h4>Teléfono de contacto</h4>
-            <div class="vista-recurso marcador">
-              +51 XXX XXX XXX
-            </div>
-            <a class="boton-recurso" href="tel:+51XXXXXXXXX">
-              Llamar
-            </a>
-          </article>
-        </div>
-      </article>
+            <article class="contacto-dato">
+              <h3>Correo de soporte</h3>
+              <p>
+                <a href="mailto:soporte.bancolsp@gmail.com">
+                  soporte.bancolsp@gmail.com
+                </a>
+              </p>
+              <a class="contacto-accion" href="mailto:soporte.bancolsp@gmail.com">
+                Escribir a soporte
+              </a>
+            </article>
+          </div>
 
-      <article class="tarjeta-capacitacion" style="margin-top:24px;">
-        <header class="cabecera-capacitacion">
-          <p class="fecha">Canales complementarios</p>
-          <h2>Redes, horario y ubicación</h2>
-          <p class="tema">
-            Estos canales permiten ampliar la comunicación institucional y orientar
-            consultas relacionadas con los repositorios digitales del CREBE.
-          </p>
-        </header>
+          <div class="contacto-grid contacto-bloque">
+            <article class="contacto-dato">
+              <h3>Teléfono de contacto</h3>
+              <p>
+                <a href="tel:+51XXXXXXXXX">+51 XXX XXX XXX</a>
+              </p>
+              <a class="contacto-accion" href="tel:+51XXXXXXXXX">
+                Llamar
+              </a>
+            </article>
 
-        <div class="recursos">
-          <article class="recurso">
-            <h4>WhatsApp</h4>
-            <div class="vista-recurso marcador">
-              Enviar mensaje por WhatsApp
-            </div>
-            <a
-              class="boton-recurso"
-              href="https://wa.me/51XXXXXXXXX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Abrir WhatsApp
-            </a>
-          </article>
+            <article class="contacto-dato">
+              <h3>WhatsApp</h3>
+              <p>
+                Canal disponible para mensajes de coordinación o consulta.
+              </p>
+              <a
+                class="contacto-accion"
+                href="https://wa.me/51XXXXXXXXX"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Enviar mensaje
+              </a>
+            </article>
 
-          <article class="recurso">
-            <h4>Redes sociales</h4>
-            <div class="vista-recurso marcador">
-              Facebook<br>
-              YouTube<br>
-              Tiktok
-            </div>
-            <a
-              class="boton-recurso"
-              href="https://www.facebook.com/CREBESM"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Abrir Facebook
-            </a>
-          </article>
+            <article class="contacto-dato">
+              <h3>Redes sociales</h3>
+              <p>
+                Facebook institucional<br>
+                YouTube<br>
+                Tiktok
+              </p>
+              <a
+                class="contacto-accion"
+                href="https://www.facebook.com/CREBESM"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Abrir Facebook
+              </a>
+            </article>
 
-          <article class="recurso">
-            <h4>Horario de atención</h4>
-            <div class="vista-recurso marcador">
-              Lunes a viernes<br>
-              08:00 a.m. - 12:00 p.m.
-            </div>
-            <span class="boton-recurso deshabilitado">
-              Atención institucional
-            </span>
-          </article>
+            <article class="contacto-dato">
+              <h3>Horario de atención</h3>
+              <p>
+                Lunes a viernes<br>
+                08:00 a.m. - 12:00 p.m.
+              </p>
+              <span class="contacto-accion deshabilitado">Atención institucional</span>
+            </article>
+          </div>
 
-          <article class="recurso">
-            <h4>Dirección institucional</h4>
-            <div class="vista-recurso marcador">
-              Av. Santa Clara N.° XXX<br>
-              Distrito de Manantay, Coronel Portillo,<br>
-              Ucayali, Perú.
-            </div>
-            <span class="boton-recurso deshabilitado">
-              Ubicación referencial
-            </span>
-          </article>
-        </div>
-      </article>
+          <div class="contacto-grid contacto-bloque">
+            <article class="contacto-dato">
+              <h3>Dirección institucional</h3>
+              <p>
+                CREBE "Señor de los Milagros" - Ucayali<br>
+                Dirección: Av. Santa Clara N.° XXX, Distrito de Manantay,
+                Provincia de Coronel Portillo, Ucayali, Perú.
+              </p>
+              <span class="contacto-accion deshabilitado">Ubicación referencial</span>
+            </article>
 
-      <article class="tarjeta-capacitacion" style="margin-top:24px;">
-        <header class="cabecera-capacitacion">
-          <p class="fecha">Observaciones</p>
-          <h2>Reporte de errores o sugerencias</h2>
-          <p class="tema">
-            Si encuentra algún error, contenido desactualizado, enlace inactivo
-            o requiere realizar una sugerencia de mejora, comuníquese mediante
-            el correo institucional o el correo de soporte. Incluya el nombre del
-            recurso observado y una breve descripción de la observación.
-          </p>
-        </header>
+            <article class="contacto-dato">
+              <h3>Plataforma principal</h3>
+              <p>
+                Acceso a la plataforma educativa digital CREBE Ucayali.
+              </p>
+              <a class="contacto-accion" href="https://crebeucayali.weebly.com/">
+                Ir a la plataforma
+              </a>
+            </article>
+          </div>
 
-        <div class="recursos">
-          <article class="recurso">
-            <h4>Plataforma principal</h4>
-            <div class="vista-recurso marcador">
-              Regresar a la plataforma educativa digital CREBE Ucayali.
-            </div>
-            <a class="boton-recurso" href="https://crebeucayali.weebly.com/">
-              Ir a la plataforma principal
-            </a>
-          </article>
-
-          <article class="recurso">
-            <h4>Capacitaciones CREBE</h4>
-            <div class="vista-recurso marcador">
-              Volver al repositorio de jornadas de capacitación.
-            </div>
-            <a class="boton-recurso" href="index.html">
-              Ver capacitaciones
-            </a>
-          </article>
+          <div class="contacto-nota">
+            Si encuentra algún error, contenido desactualizado o requiere realizar
+            una sugerencia de mejora, comuníquese mediante el correo institucional
+            o el correo de soporte. Incluya el nombre del recurso observado y una
+            breve descripción de la observación.
+          </div>
         </div>
       </article>
     </section>
@@ -250,7 +367,6 @@
         <h2>Enlaces</h2>
         <p>
           <a href="https://crebeucayali.weebly.com/">Inicio</a><br>
-          <a href="index.html">Capacitaciones</a><br>
           <a href="contacto.html">Contacto</a>
         </p>
       </div>
