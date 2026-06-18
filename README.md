@@ -4,7 +4,7 @@ Este repositorio forma parte de mi trabajo personal de organización, conservaci
 
 Lo desarrollo como un espacio digital de apoyo para reunir recursos formativos que puedan ser útiles para docentes, familias, directivos, profesionales de apoyo y comunidad educativa. Puede incluir videos, flyers, infografías, diapositivas, documentos de apoyo, enlaces complementarios y materiales utilizados en jornadas de capacitación, asistencia técnica, sensibilización u orientación.
 
-El nombre del repositorio hace referencia al contexto educativo en el que estos materiales pueden tener uso y pertinencia. Cuando se vincule con acciones del CREBE "Señor de los Milagros" - Ucayali, dicha referencia debe entenderse como contexto institucional de uso, no como transferencia de autoría del proyecto digital.
+El nombre del repositorio hace referencia al contexto educativo en el que estos materiales pueden tener uso y pertinencia. Cuando se vincule con acciones del CREBE "Señor de los Milagros" - Ucayali u otra institución, dicha referencia debe entenderse como contexto de uso o coordinación, no como transferencia de autoría del proyecto digital.
 
 ## Finalidad del proyecto
 
@@ -60,16 +60,17 @@ capacitaciones-crebe-ucayali/
 │   └── enlaces.md
 │
 └── docs/
-    ├── alcance-formativo.md
+    ├── autoria-y-contexto.md
     ├── fuentes-y-creditos.md
     ├── uso-permitido.md
-    ├── respaldo-institucional.md
+    ├── alcance-formativo.md
     ├── criterios-de-publicacion.md
     ├── estructura-del-proyecto.md
-    └── bitacora-de-cambios.md
+    ├── bitacora-de-cambios.md
+    └── criterios-para-videos-y-flyers.md
 ```
 
-La estructura puede ajustarse según el crecimiento del proyecto. La carpeta `docs` permite conservar documentos de respaldo pedagógico, autoral, institucional y organizativo.
+La estructura puede ajustarse según el crecimiento del proyecto. La carpeta `docs` permite conservar documentos de respaldo autoral, formativo, técnico y organizativo.
 
 ## Criterios de publicación
 
@@ -81,7 +82,7 @@ Cuando se utilicen materiales externos, se debe conservar la fuente correspondie
 
 Los contenidos de este repositorio tienen carácter orientador y formativo. Pueden apoyar procesos de capacitación, sensibilización, acompañamiento docente y fortalecimiento de prácticas inclusivas.
 
-Su uso debe adecuarse al contexto de cada institución educativa, a las características de los estudiantes, a las necesidades de apoyo identificadas y a las orientaciones pedagógicas vigentes. Los materiales no sustituyen la evaluación profesional, la planificación docente ni las decisiones institucionales que correspondan.
+Su uso debe adecuarse al contexto de cada institución educativa, a las características de los participantes, a las necesidades de apoyo identificadas y a las orientaciones pedagógicas vigentes. Los materiales no sustituyen la evaluación profesional, la planificación docente ni las decisiones institucionales que correspondan.
 
 ## Autoría y desarrollo
 
@@ -89,13 +90,13 @@ Proyecto desarrollado y organizado por Gabriel Berrospi como recurso digital per
 
 La organización del repositorio, la adaptación digital, la estructura de navegación, la selección y disposición de recursos corresponden al trabajo realizado para este proyecto, sin afectar la autoría o titularidad de materiales externos que puedan utilizarse como referencia o apoyo.
 
-Cuando el repositorio sea utilizado dentro de acciones del CREBE "Señor de los Milagros" - Ucayali, debe conservarse el reconocimiento de autoría y la referencia institucional correspondiente. Esta referencia no implica transferencia de autoría ni uso libre de logos, nombres, materiales o documentos institucionales fuera del marco autorizado.
+Cuando el repositorio sea utilizado dentro de acciones del CREBE "Señor de los Milagros" - Ucayali u otra institución, debe conservarse el reconocimiento de autoría y la referencia de uso correspondiente. Esta referencia no implica transferencia de autoría ni uso libre de logos, nombres, materiales o documentos institucionales fuera del marco autorizado.
 
 ## Uso permitido
 
 El repositorio puede ser consultado y utilizado con fines educativos, formativos, pedagógicos y de sensibilización.
 
-Toda reutilización debe conservar la referencia al proyecto, al autor responsable y a las fuentes externas empleadas en cada material. Cuando el recurso se use en el marco de acciones del CREBE "Señor de los Milagros" - Ucayali, también debe mantenerse la referencia institucional correspondiente.
+Toda reutilización debe conservar la referencia al proyecto, al autor responsable y a las fuentes externas empleadas en cada material. Cuando el recurso se use en un contexto institucional, debe mantenerse la referencia de uso correspondiente sin presentar el proyecto como propiedad institucional.
 
 No se autoriza el uso comercial de los contenidos, materiales, diseños, grabaciones, documentos o recursos vinculados al repositorio sin autorización correspondiente.
 
