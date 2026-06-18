@@ -1,20 +1,24 @@
 # Capacitaciones CREBE Ucayali
 
-Capacitaciones CREBE Ucayali es un repositorio digital educativo orientado a organizar, conservar y difundir materiales formativos vinculados a Educación Especial, inclusión educativa, accesibilidad, atención a la diversidad y fortalecimiento de capacidades docentes.
+Este repositorio forma parte de mi trabajo personal de organización, conservación y difusión de materiales educativos vinculados a Educación Especial, inclusión educativa, accesibilidad y atención a la diversidad.
 
-El repositorio puede reunir videos, flyers, infografías, diapositivas, documentos de apoyo, enlaces complementarios y recursos utilizados en jornadas de capacitación, asistencia técnica, sensibilización u orientación a docentes, familias, directivos y comunidad educativa vinculada al CREBE "Señor de los Milagros" - Ucayali.
+Lo desarrollo como un espacio digital de apoyo para reunir recursos formativos que puedan ser útiles para docentes, familias, directivos, profesionales de apoyo y comunidad educativa. Puede incluir videos, flyers, infografías, diapositivas, documentos de apoyo, enlaces complementarios y materiales utilizados en jornadas de capacitación, asistencia técnica, sensibilización u orientación.
+
+El nombre del repositorio hace referencia al contexto educativo en el que estos materiales pueden tener uso y pertinencia. Cuando se vincule con acciones del CREBE "Señor de los Milagros" - Ucayali, dicha referencia debe entenderse como contexto institucional de uso, no como transferencia de autoría del proyecto digital.
 
 ## Finalidad del proyecto
 
-La finalidad principal es contar con un espacio ordenado para presentar materiales de capacitación de manera clara, accesible y funcional. Este repositorio busca facilitar la consulta posterior de los recursos, apoyar la continuidad de las acciones formativas y conservar evidencias digitales del trabajo educativo desarrollado.
+La finalidad principal es contar con un espacio ordenado para presentar, conservar y consultar materiales de capacitación de manera clara, accesible y funcional.
 
-El proyecto tiene finalidad educativa, formativa, institucional y no comercial. No reemplaza los canales formales de comunicación institucional ni las disposiciones emitidas por las autoridades educativas correspondientes. Debe entenderse como un recurso complementario de apoyo, difusión y organización pedagógica.
+Este repositorio busca facilitar la revisión posterior de los recursos, apoyar la continuidad de acciones formativas y servir como respaldo digital del trabajo educativo que voy organizando en torno a la inclusión, la accesibilidad y la atención a la diversidad.
+
+El proyecto tiene finalidad educativa, formativa y no comercial. No reemplaza los canales formales de comunicación institucional ni las disposiciones emitidas por las autoridades educativas correspondientes. Debe entenderse como un recurso personal de apoyo, difusión y organización pedagógica.
 
 ## Público al que se dirige
 
-Este repositorio está dirigido a docentes, directivos, familias, profesionales de apoyo, instituciones educativas, equipos de Educación Básica Especial, Educación Básica Regular y comunidad educativa interesada en fortalecer prácticas inclusivas y accesibles.
+Este recurso puede ser útil para docentes, directivos, familias, profesionales de apoyo, instituciones educativas, equipos de Educación Básica Especial, Educación Básica Regular y personas interesadas en fortalecer prácticas inclusivas y accesibles.
 
-También puede servir como respaldo para acciones de sensibilización, acompañamiento pedagógico, orientación familiar y capacitación continua en temas vinculados a discapacidad, inclusión, accesibilidad y atención a la diversidad.
+También puede servir como material de apoyo para acciones de sensibilización, acompañamiento pedagógico, orientación familiar y capacitación continua en temas vinculados a discapacidad, inclusión educativa, accesibilidad y atención a la diversidad.
 
 ## Contenidos que puede incluir
 
@@ -81,15 +85,17 @@ Su uso debe adecuarse al contexto de cada institución educativa, a las caracter
 
 ## Autoría y desarrollo
 
-Proyecto desarrollado y organizado por Gabriel Berrospi como recurso digital educativo de apoyo a las acciones de capacitación, accesibilidad e inclusión educativa.
+Proyecto desarrollado y organizado por Gabriel Berrospi como recurso digital personal de apoyo a la formación, accesibilidad e inclusión educativa.
 
-Cuando el repositorio sea utilizado dentro de acciones del CREBE "Señor de los Milagros" - Ucayali, debe conservarse el reconocimiento de autoría y la referencia institucional correspondiente, sin que ello implique transferencia de autoría ni uso libre de logos, nombres, materiales o documentos institucionales fuera del marco autorizado.
+La organización del repositorio, la adaptación digital, la estructura de navegación, la selección y disposición de recursos corresponden al trabajo realizado para este proyecto, sin afectar la autoría o titularidad de materiales externos que puedan utilizarse como referencia o apoyo.
+
+Cuando el repositorio sea utilizado dentro de acciones del CREBE "Señor de los Milagros" - Ucayali, debe conservarse el reconocimiento de autoría y la referencia institucional correspondiente. Esta referencia no implica transferencia de autoría ni uso libre de logos, nombres, materiales o documentos institucionales fuera del marco autorizado.
 
 ## Uso permitido
 
-El repositorio puede ser consultado y utilizado con fines educativos, formativos, pedagógicos, institucionales y de sensibilización.
+El repositorio puede ser consultado y utilizado con fines educativos, formativos, pedagógicos y de sensibilización.
 
-Toda reutilización debe conservar la referencia al proyecto, al autor responsable, al CREBE "Señor de los Milagros" - Ucayali cuando exista apoyo institucional, y a las fuentes externas empleadas en cada material.
+Toda reutilización debe conservar la referencia al proyecto, al autor responsable y a las fuentes externas empleadas en cada material. Cuando el recurso se use en el marco de acciones del CREBE "Señor de los Milagros" - Ucayali, también debe mantenerse la referencia institucional correspondiente.
 
 No se autoriza el uso comercial de los contenidos, materiales, diseños, grabaciones, documentos o recursos vinculados al repositorio sin autorización correspondiente.
 
@@ -130,5 +136,5 @@ Las siguientes etapas pueden incluir:
 ## Créditos
 
 Capacitaciones CREBE Ucayali.  
-Desarrollado y organizado por Gabriel Berrospi con apoyo institucional del CREBE "Señor de los Milagros" - Ucayali.  
-Repositorio educativo sin fines de lucro orientado a la formación, accesibilidad, inclusión educativa y atención a la diversidad.
+Repositorio desarrollado y organizado por Gabriel Berrospi.  
+Proyecto educativo personal, sin fines de lucro, orientado a la formación, accesibilidad, inclusión educativa y atención a la diversidad.
