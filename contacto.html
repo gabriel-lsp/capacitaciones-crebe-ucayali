@@ -11,136 +11,23 @@
   <link rel="stylesheet" href="estilos.css?v=20">
 
   <style>
-    .contacto-contenedor{
-      width:min(1100px, calc(100% - 40px));
-      margin:0 auto 56px;
-    }
-
-    .contacto-tarjeta{
-      background:var(--blanco);
-      border:1px solid var(--borde);
-      border-radius:var(--radio);
-      box-shadow:var(--sombra);
-      overflow:hidden;
-    }
-
-    .contacto-cabecera{
-      padding:clamp(24px, 4vw, 38px);
-      background:
-        linear-gradient(135deg, rgba(232,241,245,.95), rgba(229,243,239,.95)),
-        var(--blanco);
-      border-bottom:1px solid var(--borde);
-    }
-
-    .contacto-cabecera h2{
-      max-width:840px;
-      margin:0;
-      color:var(--azul-900);
-      font-family:Georgia, "Times New Roman", serif;
-      font-size:clamp(1.9rem, 3.6vw, 3rem);
-      font-weight:600;
-      line-height:1.05;
-      letter-spacing:-.04em;
-    }
-
-    .contacto-cabecera p{
-      max-width:820px;
-      margin:14px 0 0;
-      color:var(--texto-suave);
-      font-size:1rem;
-      line-height:1.7;
-    }
-
-    .contacto-cuerpo{
-      padding:clamp(22px, 4vw, 34px);
-    }
-
-    .contacto-grid{
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0, 1fr));
-      gap:18px;
-    }
-
-    .contacto-dato{
-      min-width:0;
-      padding:20px;
-      background:var(--arena-50);
-      border:1px solid var(--borde);
-      border-radius:16px;
-    }
-
-    .contacto-dato h3{
-      margin:0 0 10px;
-      color:var(--azul-900);
-      font-size:1.05rem;
-      font-weight:800;
-      line-height:1.25;
-    }
-
-    .contacto-dato p{
-      margin:0;
-      color:var(--texto-suave);
-      line-height:1.65;
-      overflow-wrap:break-word;
-    }
-
-    .contacto-dato a{
-      color:var(--verde-700);
-      font-weight:750;
-    }
-
-    .contacto-accion{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:42px;
-      margin-top:14px;
-      padding:10px 14px;
-      color:var(--blanco) !important;
-      background:var(--verde-700);
-      border:1px solid var(--verde-700);
-      border-radius:999px;
-      font-size:.92rem;
-      font-weight:800;
-      text-align:center;
-      text-decoration:none;
-    }
-
-    .contacto-accion:hover{
-      background:var(--verde-600);
-    }
-
-    .contacto-accion.deshabilitado{
-      color:var(--texto-suave) !important;
-      background:var(--azul-100);
-      border-color:var(--borde);
-      cursor:default;
-    }
-
-    .contacto-bloque{
-      margin-top:24px;
-    }
-
-    .contacto-nota{
-      margin-top:24px;
-      padding:22px;
-      color:#725918;
-      background:#fff8e5;
-      border:1px solid #ebd599;
-      border-radius:16px;
-      line-height:1.7;
-      font-weight:650;
-    }
-
-    @media (max-width:760px){
-      .contacto-contenedor{
-        width:min(100% - 28px, 1100px);
-      }
-
-      .contacto-grid{
-        grid-template-columns:1fr;
-      }
-    }
+    .contacto-contenedor{width:min(1100px, calc(100% - 40px));margin:0 auto 56px;}
+    .contacto-tarjeta{background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden;}
+    .contacto-cabecera{padding:clamp(24px, 4vw, 38px);background:linear-gradient(135deg, rgba(232,241,245,.95), rgba(229,243,239,.95)),var(--blanco);border-bottom:1px solid var(--borde);}
+    .contacto-cabecera h2{max-width:840px;margin:0;color:var(--azul-900);font-family:Georgia, "Times New Roman", serif;font-size:clamp(1.9rem, 3.6vw, 3rem);font-weight:600;line-height:1.05;letter-spacing:-.04em;}
+    .contacto-cabecera p{max-width:820px;margin:14px 0 0;color:var(--texto-suave);font-size:1rem;line-height:1.7;}
+    .contacto-cuerpo{padding:clamp(22px, 4vw, 34px);}
+    .contacto-grid{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:18px;}
+    .contacto-dato{min-width:0;padding:20px;background:var(--arena-50);border:1px solid var(--borde);border-radius:16px;}
+    .contacto-dato h3{margin:0 0 10px;color:var(--azul-900);font-size:1.05rem;font-weight:800;line-height:1.25;}
+    .contacto-dato p{margin:0;color:var(--texto-suave);line-height:1.65;overflow-wrap:break-word;}
+    .contacto-dato a{color:var(--verde-700);font-weight:750;}
+    .contacto-accion{display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin-top:14px;padding:10px 14px;color:var(--blanco) !important;background:var(--verde-700);border:1px solid var(--verde-700);border-radius:999px;font-size:.92rem;font-weight:800;text-align:center;text-decoration:none;}
+    .contacto-accion:hover{background:var(--verde-600);}
+    .contacto-accion.deshabilitado{color:var(--texto-suave) !important;background:var(--azul-100);border-color:var(--borde);cursor:default;}
+    .contacto-bloque{margin-top:24px;}
+    .contacto-nota{margin-top:24px;padding:22px;color:#725918;background:#fff8e5;border:1px solid #ebd599;border-radius:16px;line-height:1.7;font-weight:650;}
+    @media (max-width:760px){.contacto-contenedor{width:min(100% - 28px, 1100px);}.contacto-grid{grid-template-columns:1fr;}}
   </style>
 </head>
 
@@ -317,8 +204,7 @@
               <h3>Dirección institucional</h3>
               <p>
                 CREBE "Señor de los Milagros" - Ucayali<br>
-                Dirección: Av. Santa Clara N.° XXX, Distrito de Manantay,
-                Provincia de Coronel Portillo, Ucayali, Perú.
+                Dirección: pendiente
               </p>
               <span class="contacto-accion deshabilitado">Ubicación referencial</span>
             </article>
@@ -350,10 +236,9 @@
       <div class="footer-bloque footer-identidad">
         <img
           class="logo-footer"
-          src="imagenes/logo-crebe.png"
+          src="logo-crebe.png"
           alt="Logo del CREBE Señor de los Milagros - Ucayali"
         >
-
         <div>
           <h2>Jornadas de capacitación CREBE</h2>
           <p>
@@ -366,27 +251,33 @@
       <div class="footer-bloque">
         <h2>Enlaces</h2>
         <p>
-          <a href="https://crebeucayali.weebly.com/">Inicio</a><br>
-          <a href="contacto.html">Contacto</a>
+          <a href="https://crebeucayali.weebly.com/">Inicio principal</a><br>
+          <a href="contacto.html">Contacto</a><br>
+          <a href="https://gabriel-lsp.github.io/banco-digital-accesible/">Banco Digital Accesible</a><br>
+          <a href="https://gabriel-lsp.github.io/materiales-educativos-accesibles/">Material Educativo Accesible</a><br>
+          <a href="https://gabriel-lsp.github.io/juegos-interactivos-accesibles/">Juegos Educativos Accesibles</a><br>
+          <a href="https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/">Capacitaciones CREBE</a><br>
+          <a href="https://gabriel-lsp.github.io/noti-inclusivos/">Noti Inclusivos</a>
         </p>
       </div>
 
       <div class="footer-bloque">
-        <h2>Contacto</h2>
+        <h2>Contacto CREBE</h2>
         <p>
           CREBE "Señor de los Milagros" - Ucayali<br>
-          Centro de Recursos de Educación Básica Especial<br>
-          <a href="mailto:senordelosmilagroscrebe@gmail.com">
-            senordelosmilagroscrebe@gmail.com
-          </a>
+          Teléfono: pendiente<br>
+          Correo: senordelosmilagroscrebe@gmail.com<br>
+          Horario: lunes a viernes, 8:00 a.m. - 12:00 p.m.<br>
+          Dirección: pendiente<br>
+          <a href="https://www.facebook.com/CREBESM" target="_blank" rel="noopener noreferrer">Facebook</a><br>
+          TikTok: pendiente
         </p>
       </div>
     </div>
 
     <div class="footer-final">
       <p>
-        © 2026 Jornadas de capacitación CREBE. Desarrollado por Gabriel Berrospi
-        con apoyo institucional del CREBE "Señor de los Milagros" - Ucayali.
+        © 2026 Gabriel Berrospi. Desarrollo original. Uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
       </p>
     </div>
   </footer>
