@@ -7,7 +7,7 @@ const capacitaciones = [
     recursos: {
       flyer: "imagenes/capacitacion-01/flyer.jpg",
       infografia: "imagenes/capacitacion-01/infografia.jpg",
-      diapositivas: "documentos/capacitacion-01/diapositivas.pdf",
+      diapositivas: "",
       video: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/preview",
       videoDrive: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/view"
     }
@@ -78,17 +78,7 @@ const capacitaciones = [
 ];
 
 const lineaTiempo = document.getElementById("lineaTiempo");
-const campoBusqueda = document.getElementById("busqueda");
-const botonLimpiar = document.getElementById("limpiar");
 const mensajeSinResultados = document.getElementById("sinResultados");
-
-function limpiarTexto(texto) {
-  return texto
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim();
-}
 
 function protegerHTML(texto) {
   return String(texto)
@@ -174,17 +164,10 @@ function crearRecursoPendiente(titulo, mensaje, boton) {
 }
 
 function crearTarjeta(capacitacion) {
-  const textoBusqueda = limpiarTexto(
-    `${capacitacion.fecha} ${capacitacion.titulo} ${capacitacion.tema}`
-  );
-
   const recursos = capacitacion.recursos || {};
 
   return `
-    <article
-      class="capacitacion ${capacitacion.estado === "disponible" ? "disponible" : "pendiente"}"
-      data-texto="${protegerHTML(textoBusqueda)}"
-    >
+    <article class="capacitacion ${capacitacion.estado === "disponible" ? "disponible" : "pendiente"}">
       <div class="punto-linea" aria-hidden="true"></div>
 
       <div class="tarjeta-capacitacion">
@@ -219,6 +202,8 @@ function crearTarjeta(capacitacion) {
 }
 
 function renderizarCapacitaciones(lista) {
+  if (!lineaTiempo) return;
+
   lineaTiempo.innerHTML = lista.map(crearTarjeta).join("");
 
   if (mensajeSinResultados) {
@@ -226,32 +211,4 @@ function renderizarCapacitaciones(lista) {
   }
 }
 
-function filtrarCapacitaciones() {
-  const consulta = limpiarTexto(campoBusqueda.value);
-
-  const resultado = capacitaciones.filter((capacitacion) => {
-    const contenido = limpiarTexto(
-      `${capacitacion.fecha} ${capacitacion.titulo} ${capacitacion.tema}`
-    );
-
-    return contenido.includes(consulta);
-  });
-
-  renderizarCapacitaciones(resultado);
-}
-
-if (lineaTiempo) {
-  renderizarCapacitaciones(capacitaciones);
-}
-
-if (campoBusqueda) {
-  campoBusqueda.addEventListener("input", filtrarCapacitaciones);
-}
-
-if (botonLimpiar) {
-  botonLimpiar.addEventListener("click", () => {
-    campoBusqueda.value = "";
-    campoBusqueda.focus();
-    renderizarCapacitaciones(capacitaciones);
-  });
-}
+renderizarCapacitaciones(capacitaciones);
