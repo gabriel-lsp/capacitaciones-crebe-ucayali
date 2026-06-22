@@ -1,10 +1,10 @@
 # Estructura del proyecto
 
-Este documento propone una organización básica para el repositorio Capacitaciones CREBE Ucayali.
+Este documento registra la organización real del repositorio Capacitaciones CREBE Ucayali.
 
-La estructura busca mantener separados los archivos principales, los datos, los recursos visuales, los documentos, los enlaces a videos y la documentación de respaldo.
+La estructura actual organiza los recursos por capacitación. Cada jornada puede tener una carpeta propia para conservar juntos sus archivos visuales, documentos y materiales asociados.
 
-## Estructura sugerida
+## Estructura real del sitio
 
 ```text
 capacitaciones-crebe-ucayali/
@@ -15,21 +15,14 @@ capacitaciones-crebe-ucayali/
 ├── README.md
 ├── LICENSE
 │
-├── datos/
-│   └── capacitaciones.json
-│
 ├── imagenes/
-│   ├── flyers/
-│   ├── infografias/
-│   └── portadas/
+│   └── capacitacion-01/
+│       ├── flyer.jpg
+│       └── infografia.jpg
 │
 ├── documentos/
-│   ├── diapositivas/
-│   ├── guias/
-│   └── materiales-descargables/
-│
-├── videos/
-│   └── enlaces.md
+│   └── capacitacion-01/
+│       └── diapositivas.pdf
 │
 └── docs/
     ├── autoria-y-contexto.md
@@ -44,15 +37,34 @@ capacitaciones-crebe-ucayali/
 
 ## Archivos principales
 
-`index.html` contiene la estructura principal del sitio o página inicial del repositorio.
+`index.html` contiene la estructura principal del sitio, la cabecera, la presentación, la línea de tiempo y el pie de página.
 
 `estilos.css` define el diseño visual, la adaptación responsiva y la presentación de los recursos.
 
-`app.js` puede contener funciones de búsqueda, filtros, carga de datos o interacción con el usuario.
+`app.js` contiene el registro de capacitaciones y la generación de las tarjetas de recursos. En la versión actual no se utiliza buscador visible, por eso se retiró la lógica de búsqueda y filtrado que no tenía elementos correspondientes en el HTML.
 
-`README.md` presenta el proyecto, su finalidad, autoría, uso permitido y estado general.
+`README.md` presenta el proyecto, su finalidad, autoría, uso permitido, estructura real y estado general.
 
 `LICENSE` establece las condiciones aplicables al código del repositorio.
+
+## Recursos por capacitación
+
+La carpeta `imagenes/capacitacion-01/` contiene los recursos visuales de la primera capacitación, como el flyer y la infografía.
+
+La carpeta `documentos/capacitacion-01/` queda reservada para documentos de la primera capacitación. El archivo de diapositivas debe mantenerse como pendiente hasta que se verifique que el PDF sea funcional o se reemplace por una versión correcta.
+
+Para nuevas jornadas, se recomienda continuar el mismo patrón:
+
+```text
+imagenes/capacitacion-02/
+documentos/capacitacion-02/
+imagenes/capacitacion-03/
+documentos/capacitacion-03/
+```
+
+## Videos
+
+Los videos no se almacenan directamente en una carpeta del repositorio. En la versión actual se enlazan desde Google Drive mediante las rutas registradas en `app.js`.
 
 ## Carpeta docs
 
