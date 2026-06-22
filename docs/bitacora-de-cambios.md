@@ -14,6 +14,15 @@ La bitácora permite mantener un historial ordenado del crecimiento del proyecto
 - Creación de documentos base en la carpeta `docs`.
 - Organización inicial de criterios de autoría, fuentes, uso permitido, alcance formativo, publicación, estructura y criterios para videos y flyers.
 
+## Ajustes de depuración
+
+### 2026
+
+- Depuración de `app.js` para retirar la lógica del buscador que no tenía campo ni botón visible en `index.html`.
+- Ajuste del recurso de diapositivas de la primera capacitación para que figure como pendiente hasta verificar o reemplazar el PDF.
+- Corrección del README con la estructura real usada por el sitio.
+- Corrección de `docs/estructura-del-proyecto.md` con las rutas reales de imágenes y documentos.
+
 ## Cambios por registrar
 
 Se recomienda registrar cada cambio importante con los siguientes datos:
