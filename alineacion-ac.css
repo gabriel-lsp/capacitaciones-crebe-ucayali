@@ -1,0 +1,217 @@
+/* Alineación visual de CAP con la cabecera base del repo AC */
+
+.cabecera,
+.encabezado {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 18px 145px;
+  color: var(--blanco);
+  background:
+    radial-gradient(circle at 84% 70%, rgba(255, 255, 255, 0.11) 0 22%, transparent 23%),
+    radial-gradient(circle at 86% 74%, rgba(255, 255, 255, 0.08) 0 36%, transparent 37%),
+    linear-gradient(135deg, #0b3550 0%, #0f4f57 48%, #0f766e 100%);
+}
+
+.cabecera::after,
+.encabezado::after {
+  display: none;
+  content: none;
+}
+
+.navegacion,
+.barra-navegacion {
+  gap: 20px;
+  max-width: 1120px;
+  flex-wrap: wrap;
+}
+
+.marca {
+  gap: 14px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.marca-icono {
+  width: 54px;
+  height: 54px;
+  color: #0b3550 !important;
+  background: var(--blanco);
+  border-radius: 18px;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.enlaces-cabecera,
+.enlaces {
+  gap: 12px;
+}
+
+.enlace-cabecera,
+.enlaces a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 22px;
+  color: var(--blanco);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.enlace-cabecera:hover,
+.enlace-cabecera.activo,
+.enlaces a:hover,
+.enlaces a:focus {
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.presentacion,
+.hero {
+  max-width: 1120px;
+  margin: 70px auto 0;
+}
+
+.bloque-institucional {
+  gap: 22px;
+  max-width: none;
+  margin-bottom: 34px;
+}
+
+.logo-crebe,
+.logo-institucional,
+.bloque-institucional img {
+  width: 92px !important;
+  max-width: 92px !important;
+  height: 92px !important;
+  max-height: 92px !important;
+  object-fit: contain !important;
+}
+
+.texto-institucional {
+  padding-left: 22px;
+  border-left: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.nombre-institucional {
+  margin: 0 0 8px;
+  color: var(--blanco);
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.detalle-institucional {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.etiqueta-superior,
+.seccion-etiqueta,
+.etiqueta {
+  margin: 0 0 14px;
+  color: #c9f7ee;
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.seccion-etiqueta {
+  color: var(--verde-700);
+}
+
+.presentacion h1,
+.hero h1 {
+  max-width: 900px;
+  margin: 0 0 22px;
+  color: var(--blanco);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 5.8vw, 4.15rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.subtitulo,
+.hero p {
+  max-width: 880px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 1.22rem;
+  line-height: 1.65;
+}
+
+main,
+.contenedor {
+  width: min(1120px, calc(100% - 40px));
+}
+
+.panel-busqueda,
+.presentacion:not(header .presentacion) {
+  margin-top: -78px;
+}
+
+.descripcion-panel,
+.presentacion:not(header .presentacion) p {
+  max-width: 860px;
+}
+
+.footer-contenido,
+.footer-final {
+  max-width: 1120px;
+}
+
+@media (max-width: 760px) {
+  .cabecera,
+  .encabezado {
+    padding: 26px 18px 116px;
+  }
+
+  .presentacion,
+  .hero {
+    margin-top: 54px;
+  }
+
+  .bloque-institucional {
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .logo-crebe,
+  .logo-institucional,
+  .bloque-institucional img {
+    width: 80px !important;
+    max-width: 80px !important;
+    height: 80px !important;
+    max-height: 80px !important;
+  }
+
+  .texto-institucional {
+    padding-left: 16px;
+    border-left: 2px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .nombre-institucional {
+    font-size: 1rem;
+  }
+
+  .detalle-institucional {
+    font-size: 0.9rem;
+  }
+
+  main,
+  .contenedor {
+    width: min(100% - 28px, 1120px);
+  }
+}
