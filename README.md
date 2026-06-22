@@ -32,7 +32,7 @@ También puede servir como material de apoyo para acciones de sensibilización, 
 - Evidencias digitales de actividades formativas.
 - Recursos complementarios sobre Educación Especial e inclusión educativa.
 
-## Estructura sugerida del repositorio
+## Estructura real del sitio
 
 ```text
 capacitaciones-crebe-ucayali/
@@ -43,21 +43,14 @@ capacitaciones-crebe-ucayali/
 ├── README.md
 ├── LICENSE
 │
-├── datos/
-│   └── capacitaciones.json
-│
 ├── imagenes/
-│   ├── flyers/
-│   ├── infografias/
-│   └── portadas/
+│   └── capacitacion-01/
+│       ├── flyer.jpg
+│       └── infografia.jpg
 │
 ├── documentos/
-│   ├── diapositivas/
-│   ├── guias/
-│   └── materiales-descargables/
-│
-├── videos/
-│   └── enlaces.md
+│   └── capacitacion-01/
+│       └── diapositivas.pdf
 │
 └── docs/
     ├── autoria-y-contexto.md
@@ -70,7 +63,9 @@ capacitaciones-crebe-ucayali/
     └── criterios-para-videos-y-flyers.md
 ```
 
-La estructura puede ajustarse según el crecimiento del proyecto. La carpeta `docs` permite conservar documentos de respaldo autoral, formativo, técnico y organizativo.
+La estructura se organiza por capacitación. Cada jornada puede tener una carpeta propia, por ejemplo `capacitacion-01`, `capacitacion-02` o la numeración que corresponda. Dentro de cada carpeta se ubican los recursos reales usados por la página.
+
+En la versión actual, el video se enlaza desde Google Drive mediante el archivo `app.js`. Las diapositivas figuran como recurso pendiente hasta que el PDF sea verificado o reemplazado por un archivo funcional.
 
 ## Criterios de publicación
 
@@ -126,8 +121,8 @@ Repositorio en proceso de construcción y ampliación progresiva.
 Las siguientes etapas pueden incluir:
 
 - Organización de capacitaciones por fecha, tema y público objetivo.
-- Incorporación de flyers, infografías y diapositivas.
-- Creación de una página inicial para navegar por jornadas formativas.
+- Incorporación de nuevos flyers, infografías y diapositivas.
+- Verificación o reemplazo del archivo PDF de diapositivas.
 - Registro de fuentes y créditos de cada recurso.
 - Elaboración de criterios de publicación.
 - Mejora de accesibilidad visual y navegación.
