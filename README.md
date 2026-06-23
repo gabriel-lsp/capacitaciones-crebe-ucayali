@@ -6,6 +6,14 @@ Lo desarrollo como un espacio digital de apoyo para reunir recursos formativos q
 
 El nombre del repositorio hace referencia al contexto educativo en el que estos materiales pueden tener uso y pertinencia. Cuando se vincule con acciones del CREBE "Señor de los Milagros" - Ucayali u otra institución, dicha referencia debe entenderse como contexto de uso o coordinación, no como transferencia de autoría del proyecto digital.
 
+## Enlace publicado
+
+https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/
+
+## Página principal del ecosistema
+
+https://crebeucayali.weebly.com/
+
 ## Finalidad del proyecto
 
 La finalidad principal es contar con un espacio ordenado para presentar, conservar y consultar materiales de capacitación de manera clara, accesible y funcional.
@@ -103,16 +111,10 @@ Los materiales externos mantienen sus propias condiciones de autoría, uso, difu
 
 ## Publicación en GitHub Pages
 
-Si el repositorio se publica como página web, puede utilizarse GitHub Pages desde la rama principal y la carpeta raíz `/`.
+El repositorio se publica como página web en GitHub Pages desde la rama principal y la carpeta raíz `/`.
 
-Pasos generales:
-
-1. Subir todos los archivos a la rama `main`.
-2. Ingresar a `Settings`.
-3. Abrir la sección `Pages`.
-4. Seleccionar `Deploy from a branch`.
-5. Elegir la rama `main` y la carpeta raíz `/`.
-6. Guardar la configuración y esperar la publicación del sitio.
+Enlace publicado:
+https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/
 
 ## Estado del proyecto
 
