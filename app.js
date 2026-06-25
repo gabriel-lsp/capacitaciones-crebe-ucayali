@@ -134,19 +134,18 @@ function crearRecursoVideo(video, videoDrive) {
   }
 
   const enlaceExterno = videoDrive || video.replace("/preview", "/view");
+  const videoSeguro = protegerHTML(video);
+  const enlaceSeguro = protegerHTML(enlaceExterno);
 
   return `
     <article class="recurso">
       <h4>Video</h4>
-      <div class="vista-recurso video-recurso">
-        <iframe
-          src="${video}"
-          title="Video de la capacitación"
-          allow="autoplay"
-          allowfullscreen>
-        </iframe>
+      <div class="vista-recurso video-recurso marcador" data-video-src="${videoSeguro}">
+        <button class="boton-recurso boton-cargar-video" type="button" data-video-src="${videoSeguro}">
+          Ver video
+        </button>
       </div>
-      <a class="boton-recurso" href="${enlaceExterno}" target="_blank" rel="noopener">
+      <a class="boton-recurso" href="${enlaceSeguro}" target="_blank" rel="noopener">
         Abrir video en Drive
       </a>
     </article>
@@ -210,5 +209,28 @@ function renderizarCapacitaciones(lista) {
     mensajeSinResultados.hidden = lista.length > 0;
   }
 }
+
+function cargarVideoDrive(boton) {
+  const contenedor = boton.closest(".video-recurso");
+  const video = boton.dataset.videoSrc;
+
+  if (!contenedor || !video) return;
+
+  contenedor.classList.remove("marcador");
+  contenedor.innerHTML = `
+    <iframe
+      src="${video}"
+      title="Video de la capacitación"
+      allow="autoplay"
+      allowfullscreen>
+    </iframe>
+  `;
+}
+
+document.addEventListener("click", (evento) => {
+  const botonVideo = evento.target.closest(".boton-cargar-video");
+  if (!botonVideo) return;
+  cargarVideoDrive(botonVideo);
+});
 
 renderizarCapacitaciones(capacitaciones);
