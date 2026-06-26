@@ -25,6 +25,7 @@ capacitaciones-crebe-ucayali/
 │       └── diapositivas.pdf
 │
 └── docs/
+    ├── sustento-del-proyecto-personal.md
     ├── autoria-y-contexto.md
     ├── fuentes-y-creditos.md
     ├── uso-permitido.md
@@ -70,7 +71,9 @@ Los videos no se almacenan directamente en una carpeta del repositorio. En la ve
 
 La carpeta `docs` reúne documentos de respaldo autoral, formativo, técnico y organizativo.
 
-Estos documentos ayudan a explicar el alcance del proyecto, las condiciones de uso, los criterios de publicación, la organización del repositorio y el historial de cambios.
+El archivo `sustento-del-proyecto-personal.md` funciona como documento central para explicar la naturaleza personal del proyecto, la necesidad identificada, su finalidad, objetivos, alcance, beneficiarios, aspectos técnicos y criterios de reconocimiento.
+
+Los demás documentos ayudan a explicar el alcance del proyecto, las condiciones de uso, los criterios de publicación, la organización del repositorio y el historial de cambios.
 
 ## Organización progresiva
 
