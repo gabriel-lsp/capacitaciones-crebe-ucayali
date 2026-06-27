@@ -1,13 +1,13 @@
 # Estructura del proyecto
 
-Este documento registra la organización real del módulo **Capacitaciones Accesibles - CAP**, parte del **Ecosistema Virtual Accesible (EVA)**.
+Este documento registra la organización referencial del módulo Capacitaciones Accesibles - CAP, parte del Ecosistema Virtual Accesible, EVA.
 
 La estructura actual organiza los recursos por capacitación. Cada jornada puede tener una carpeta propia para conservar juntos sus archivos visuales, documentos y materiales asociados.
 
 ## Estructura general
 
 ```text
-capacitaciones-crebe-ucayali/
+capacitaciones-accesibles/
 ├── index.html
 ├── estilos.css
 ├── app.js
