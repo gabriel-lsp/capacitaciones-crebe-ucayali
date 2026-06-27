@@ -1,6 +1,6 @@
 # Criterios para videos y flyers
 
-Este documento orienta la publicación y organización de videos, grabaciones, flyers e imágenes de difusión dentro del repositorio Capacitaciones CREBE Ucayali.
+Este documento orienta la publicación y organización de videos, grabaciones, flyers e imágenes de difusión dentro del módulo **Capacitaciones Accesibles - CAP**, parte del **Ecosistema Virtual Accesible (EVA)**.
 
 La finalidad es conservar materiales formativos de manera ordenada, respetando autoría, fuentes, privacidad, accesibilidad y condiciones de uso.
 
@@ -11,7 +11,7 @@ Antes de publicar un flyer o imagen de difusión, se recomienda verificar:
 - Que tenga relación con una actividad educativa o formativa.
 - Que el título, fecha, hora y tema sean claros.
 - Que no contenga errores de información.
-- Que los logos o referencias institucionales tengan uso autorizado.
+- Que los logos o referencias de terceros tengan uso permitido.
 - Que no exponga datos personales sensibles.
 - Que conserve la fuente o autoría cuando corresponda.
 - Que el archivo tenga un nombre ordenado y fácil de identificar.
@@ -42,23 +42,15 @@ Cuando sea posible, se recomienda que los videos o recursos audiovisuales incluy
 
 ## Organización de archivos
 
-Los flyers pueden organizarse en la carpeta `imagenes/flyers/`.
+Los flyers e infografías pueden organizarse en la carpeta `imagenes/`.
 
-Las infografías pueden organizarse en la carpeta `imagenes/infografias/`.
-
-Los enlaces a videos pueden registrarse en `videos/enlaces.md` o en un archivo de datos según la estructura del proyecto.
+Los enlaces a videos pueden registrarse en `app.js` o en un archivo de datos si el proyecto crece.
 
 Las diapositivas, guías o materiales descargables pueden organizarse en la carpeta `documentos/`.
 
 ## Nombres de archivo sugeridos
 
-Se recomienda usar nombres breves, claros y sin espacios. Por ejemplo:
-
-```text
-2026-06-18_capacitacion-tea-docentes.pdf
-2026-06-18_flyer-capacitacion-tea.png
-2026-06-18_video-capacitacion-tea.md
-```
+Se recomienda usar nombres breves, claros y sin espacios.
 
 ## Criterio central
 
