@@ -1,6 +1,6 @@
 # Fuentes y créditos
 
-Este documento registra los criterios de reconocimiento de fuentes y créditos del repositorio Capacitaciones CREBE Ucayali.
+Este documento registra los criterios de reconocimiento de fuentes y créditos del módulo **Capacitaciones Accesibles - CAP**, parte del **Ecosistema Virtual Accesible (EVA)**.
 
 El proyecto es desarrollado y organizado por Gabriel Berrospi como recurso educativo digital personal orientado a la formación, accesibilidad, inclusión educativa y atención a la diversidad.
 
@@ -14,23 +14,19 @@ La organización de recursos, adaptación digital, estructura de navegación, cr
 
 Cuando se incorporen flyers, videos, diapositivas, infografías, fotografías, documentos, enlaces, grabaciones, logos o materiales descargables, deberá registrarse su procedencia y respetarse sus condiciones de uso.
 
-Si se utilizan materiales provenientes de entidades públicas, instituciones educativas, repositorios abiertos, plataformas formativas, bancos de imágenes o autores externos, se debe mantener la referencia a la fuente original cuando corresponda.
+Si se utilizan materiales provenientes de fuentes públicas, repositorios abiertos, plataformas formativas, bancos de imágenes o autores externos, se debe mantener la referencia a la fuente original cuando corresponda.
 
 ## Datos recomendados para registrar una fuente
 
 Se recomienda registrar cada recurso externo con los siguientes datos:
 
 - Nombre del recurso.
-- Autor, institución o entidad responsable.
+- Autor, fuente o responsable.
 - Enlace o procedencia.
 - Tipo de recurso.
 - Condición de uso o licencia, si está disponible.
 - Fecha de consulta o incorporación.
 - Capacitación o actividad en la que fue utilizado.
-
-## Uso de logos o referencias institucionales
-
-En caso de utilizar logos, nombres o referencias de una institución educativa, su uso debe realizarse dentro del marco autorizado y sin presentar dichos elementos como propiedad del proyecto personal.
 
 ## Reconocimiento del proyecto
 
@@ -38,4 +34,4 @@ Toda reutilización del repositorio debe conservar el reconocimiento del proyect
 
 Reconocimiento sugerido:
 
-Capacitaciones CREBE Ucayali. Proyecto desarrollado y organizado por Gabriel Berrospi como recurso educativo digital personal para la formación, accesibilidad, inclusión educativa y atención a la diversidad.
+Capacitaciones Accesibles - CAP. Módulo del Ecosistema Virtual Accesible (EVA), desarrollado y organizado por Gabriel Berrospi como recurso educativo digital personal.
